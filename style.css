@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        background-color:var(--Blue950);
+        
+        background-image: url("images/bg-desktop.png");
+        background-repeat: no-repeat;
+        background-position:100% bottom;
+        background-attachment: fixed;
+    
+
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box
+}
+
+:root{
+    /*Primary*/
+    --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    /**Neutral*/
+    --Blue200: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Blue850: hsl(228, 56%, 26%);
+    --Blue950: hsl(229, 57%, 11%);
+}
+
+ .space{
+    display: flex;
+    height: 100vh;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.row{
+    display: flex;
+
+}
+.col{
+    background-color:var(--Blue850);
+    padding: 40px;
+    margin-right: 40px;;
+    padding-right: 100px;
+    
+    
+    border-start-end-radius: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+
+}
+.col
+.icon i{
+    background-color: var(--Blue950);
+    padding: 9px;
+    padding-top: 10px;;
+    border-radius: 10px;;
+    
+}
+.edit{
+    width: 17px;
+}
+.edit3{
+    width: 28px;
+}
+.icon{
+    display: flex;
+    
+    margin-top: 20px;;
+    align-items: end;
+    gap: 15px;
+}
+
+.col2{
+    color: white;
+    font-size: xx-small;
+    background-color: var(--Blue850);
+    border-radius: 10px;
+    padding: 30px;
+
+}
+
+.col2 h1{
+    font-size:13px;
+    opacity: 0.6;
+    font-weight: 300;
+}
+
+em,strong{
+
+    font-size:medium;
+    font-weight: 700;
+    opacity:none;
+
+}
+
+
+.col2{
+    margin-top: 50px;
+    border-radius: 10px;;
+}
+
+/* for mobile */
+.cc{
+    border: 1px solid white;
+    background-color: aliceblue;
+    color: var(--Blue950);
+    margin-bottom: 140px;
+    padding: 10px;
+    border-radius: 10px;;
+    margin-right: 20px;
+    display:inline-block;
+    display: none;; 
+}
+
+/* for desktop */
+.ccD{
+    border: 2px solid white;
+    background-color: white;
+    color:var(--Blue950);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: -220px;
+    margin-top: -110px;;
+
+}
+.g{
+    padding: 10px;;
+    margin-top: -46px;;
+    margin-left: -200px;;
+    padding-left: 180px;;
+    border-bottom-right-radius: 20px;;
+    
+    background-color:var(--Blue850);
+
+
+    
+    
+}
+
+
+
+.cc em ,.ccD em{
+    font-size: xx-large;
+}
+span{
+    font-weight: 500;
+    opacity: 0.6;
+    padding: 20px;
+    
+}
+meter::-webkit-meter-optimum-value{
+    background:linear-gradient(to right,hsl(6,100%,80%),hsl(335,100%,65%) );
+    border-radius: 10px;;
+
+
+    
+    
+
+
+}
+::-webkit-meter-bar{
+    width: 270px;
+    height: 15px;
+    margin-top: 30px;;
+    background: var(--Blue950);
+
+ 
+}
+
+
+ h2 {
+    margin-top: 30px;
+    
+
+}
+.n{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+font-size:xx-small;
+align-items: center;
+opacity: 0.5;
+
+
+}
+h3{
+    margin-top: 30px;;
+    margin-left: 90px;;
+}
+
+@media (max-width:600px) {
+    body{
+        margin: auto;
+        width: 500px;
+        background-image: none;
+        background-image: url("images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-position: 10% ;
+        background-attachment:scroll;
+        background-size:cover;
+
+    
+
+    }
+    .space
+    .row{
+        display: block;
+        
+        margin-left: -120px;;
+    }
+    
+    .col2{
+        margin-inline-end: 40px;
+        
+    
+    }
+    .cc{
+        display: inline-block;
+        margin-left: 80px;
+    }
+    .ccD{
+        display: none;
+    }
+    .g{
+        display: none;
+    }
+    
+}
+
+
+
+
